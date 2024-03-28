@@ -1,0 +1,19 @@
+name: most_custom_lints
+description: Custom Lints For MOST
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ^3.2.0
+  flutter: ^3.10.0
+
+dependencies:
+  meta: ^1.10.0
+  custom_lint: ^0.6.0
+  custom_lint_builder: ^0.6.0
+
+  analyzer: ^6.0.0
+  analyzer_plugin: ^0.11.0
+
+dev_dependencies:
+  lints: ^2.1.0

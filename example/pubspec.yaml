@@ -1,0 +1,12 @@
+name: example
+description: A sample command-line application.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.2.0
+
+dev_dependencies:
+  custom_lint:
+  most_custom_lints:
+    path: ../
