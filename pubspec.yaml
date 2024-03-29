@@ -1,11 +1,11 @@
 name: most_custom_lints
 description: Custom Lints For MOST
 version: 0.0.1
-publish_to: none
+publish_to: https://pub.dev
+repository: https://github.com/MOST-Innovation-Labs/most_custom_lints
 
 environment:
   sdk: ^3.2.0
-  flutter: ^3.10.0
 
 dependencies:
   meta: ^1.10.0
