@@ -15,6 +15,11 @@ Custom lints that are used by MOST.
 
 ## Rules
 ### deprecated_from_expired
+
+It is a common practice within technology organisations to employ short-lived feature flags in continuous integration workflows. This approach allows for the integration of untested features into the main branch, representing a form of deliberate technical debt designed to facilitate smoother development flows. While the adoption of short-lived feature flags is beneficial, it often leads to challenges in maintenance when these flags are not promptly cleaned up, eventually turning into a maintenance nightmare.
+
+To address this, our annotation provides a straightforward solution to ensure timely cleanup of these feature flags. By reminding the team to remove the flags after a predetermined number of days, we not only encourage proactive management of technical debt but also enhance team communication and collaboration. This reminder serves as a nudge for the team to collectively remember and act on the cleanup, ensuring that these temporary measures do not outstay their welcome.
+
 **DO** use `DeprecatedFrom` to raise a warning after a specified date.
 
 **GOOD:**
