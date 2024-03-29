@@ -1,7 +1,6 @@
 name: most_custom_lints
-description: Custom Lints For MOST
-version: 0.0.1
-publish_to: https://pub.dev
+description: Lints rules and corresponding annotations used by Dart/Flutter team at MOST.
+version: 0.0.2
 repository: https://github.com/MOST-Innovation-Labs/most_custom_lints
 
 environment:
