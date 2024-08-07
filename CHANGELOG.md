@@ -1,3 +1,7 @@
+## 0.0.3
+
+- Add Dart SDK version top constraint (`">=3.2.0 <3.5.0"`)
+
 ## 0.0.2
 
 - Added docs.
