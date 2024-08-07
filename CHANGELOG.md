@@ -1,6 +1,6 @@
 ## 0.0.4
 
-- Change Dart SDK version constraints (`">=3.5.0 <3.6.0"`)
+- Change Dart SDK version constraint (`">=3.5.0 <3.6.0"`)
 - Change `package:analyzer` version constraints (`">=6.8.0 <7.0.0"`)
 
 ## 0.0.3
