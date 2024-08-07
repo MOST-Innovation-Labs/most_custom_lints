@@ -1,6 +1,6 @@
 import 'package:analyzer/dart/constant/value.dart';
 import 'package:analyzer/dart/element/element.dart';
-import 'package:analyzer/error/error.dart';
+import 'package:analyzer/error/error.dart' show ErrorSeverity;
 import 'package:analyzer/error/listener.dart';
 import 'package:custom_lint_builder/custom_lint_builder.dart';
 import 'package:most_custom_lints/src/utils/type_utils.dart';
@@ -37,17 +37,18 @@ class DeprecatedFromExpiredLintRule extends DartLintRule {
         final deprecationDate = _parseDeprecationDate(deprecatedFromObject);
 
         if (deprecationDate == null) {
-          reporter.reportErrorForNode(
+          reporter.atNode(
+            node,
             LintCode(
               name: code.name,
               problemMessage: 'Invalid deprecation date.',
               errorSeverity: ErrorSeverity.ERROR,
             ),
-            node,
           );
         } else if (deprecationDate.isBefore(DateTime.now())) {
           final deprecationDateText = _formatDeprecationDate(deprecationDate);
-          reporter.reportErrorForNode(
+          reporter.atNode(
+            node,
             LintCode(
               name: code.name,
               problemMessage: 'Deprecated on '
@@ -56,11 +57,11 @@ class DeprecatedFromExpiredLintRule extends DartLintRule {
                   '$message',
               errorSeverity: ErrorSeverity.WARNING,
             ),
-            node,
           );
         } else {
           final deprecationDateText = _formatDeprecationDate(deprecationDate);
-          reporter.reportErrorForNode(
+          reporter.atNode(
+            node,
             LintCode(
               name: code.name,
               problemMessage: 'To be deprecated starting from '
@@ -68,7 +69,6 @@ class DeprecatedFromExpiredLintRule extends DartLintRule {
                   '$message',
               errorSeverity: ErrorSeverity.INFO,
             ),
-            node,
           );
         }
       }
