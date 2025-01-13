@@ -1,3 +1,12 @@
+## 0.1.0
+
+- Change Dart SDK version constraint (`">=3.6.0 <3.7.0"`)
+- Change `package:analyzer` version constraints (`^7.0.0`)
+- Change `package:analyzer_plugin` version constraints (`^0.12.0`)
+- Change `package:custom_lint` version constraints (`^0.7.1`)
+- Change `package:custom_lint_builder` version constraints (`^0.7.1`)
+- Change `package:meta` version constraints (`^1.16.0`)
+
 ## 0.0.4
 
 - Change Dart SDK version constraint (`">=3.5.0 <3.6.0"`)

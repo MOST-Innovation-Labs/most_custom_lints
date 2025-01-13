@@ -1,18 +1,18 @@
 name: most_custom_lints
 description: Lints rules and corresponding annotations used by Dart/Flutter team at MOST.
-version: 0.0.4
+version: 0.1.0
 repository: https://github.com/MOST-Innovation-Labs/most_custom_lints
 
 environment:
-  sdk: ">=3.5.0 <3.6.0"
+  sdk: ">=3.6.0 <3.7.0"
 
 dependencies:
-  meta: ^1.10.0
-  custom_lint: ^0.6.0
-  custom_lint_builder: ^0.6.0
+  meta: ^1.16.0
+  custom_lint: ^0.7.1
+  custom_lint_builder: ^0.7.1
 
-  analyzer: ">=6.8.0 <7.0.0"
-  analyzer_plugin: ^0.11.0
+  analyzer: ^7.0.0
+  analyzer_plugin: ^0.12.0
 
 dev_dependencies:
-  lints: ^2.1.0
+  lints: ^5.1.1
