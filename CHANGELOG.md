@@ -1,3 +1,7 @@
+## 0.2.0
+
+- Change Dart SDK version constraint (`">=3.6.0 <4.0.0"`)
+
 ## 0.1.0
 
 - Change Dart SDK version constraint (`">=3.6.0 <3.7.0"`)
