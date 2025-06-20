@@ -1,6 +1,7 @@
 ## 0.3.0
 
 - Fix import collisions.
+- Change `package:analyzer` version constraints (`>6.0.0 < 8.0.0`)
 
 ## 0.2.0
 
