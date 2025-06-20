@@ -1,3 +1,11 @@
+## 0.3.0
+
+- Fix import collisions.
+- Change `package:analyzer` version constraints (`>6.0.0 < 8.0.0`)
+- Change `package:analyzer_plugin` version constraints (`^0.11.0`)
+- Change `package:custom_lint` version constraints (`^0.6.0`)
+- Change `package:custom_lint_builder` version constraints (`^0.6.0`)
+
 ## 0.2.0
 
 - Change Dart SDK version constraint (`">=3.6.0 <4.0.0"`)

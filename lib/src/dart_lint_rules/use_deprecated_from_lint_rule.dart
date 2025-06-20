@@ -1,6 +1,7 @@
 import 'package:analyzer/error/error.dart' show ErrorSeverity;
-import 'package:analyzer/error/listener.dart';
-import 'package:custom_lint_builder/custom_lint_builder.dart';
+import 'package:analyzer/error/listener.dart' show ErrorReporter;
+import 'package:custom_lint_builder/custom_lint_builder.dart'
+    show CustomLintContext, CustomLintResolver, DartLintRule, LintCode;
 import 'package:most_custom_lints/src/utils/type_utils.dart';
 
 class UseDeprecatedFromLintRule extends DartLintRule {
