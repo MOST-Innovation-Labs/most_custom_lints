@@ -1,3 +1,10 @@
+## 0.4.0
+
+- Change `package:analyzer` version constraints (`>=7.0.0 < 9.0.0`)
+- Change `package:analyzer_plugin` version constraints (`^0.13.0`)
+- Change `package:custom_lint` version constraints (`^0.8.1`)
+- Change `package:custom_lint_builder` version constraints (`^0.8.1`)
+- 
 ## 0.3.0
 
 - Fix import collisions.
